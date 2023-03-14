@@ -385,24 +385,56 @@ img {
    }
 }
 
+.menu-link-soc {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   width: 40px;
+   height: 40px;
+   
+   background-color: var(--color-logo-btn);
+   color: var(--light-color);
+   border-radius: 50%; 
+   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
 
+.menu-link-soc:hover,
+.menu-link-soc:focus {
+   background-color: var(--color-nav-hover); 
+}
+
+.active {
+   color: var(--color-logo-btn);
+}
+
+.menu-soc-icon {
+   width: 24px;
+   height: 24px;
+   fill: var(--light-color);
+}
 
 
  /*Hero*/
 
  .hero-section {
-   background-color: var(--color-primary);
-   padding-top: 188px;
-   padding-bottom: 188px;
    max-width: 1440px;
-   margin: 0 auto;;
+   padding-top: 112px;
+   padding-bottom: 112px;
+   margin: 0 auto;
+
    text-align: center;
+   background-color: var(--color-primary);
    background-image:linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
    url('../images/office-people.jpg');
    background-repeat: no-repeat;
    background-position: center;
    background-size: cover;
  }
+
+ @media screen and () {
+   
+ }
+
 .hero-tittle{
    color:var(--background-color);
    font-size: 56px;
