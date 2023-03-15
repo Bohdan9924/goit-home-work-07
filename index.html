@@ -62,7 +62,7 @@
           </ul>
         </address>
 
-          <!-- Button mobile menu -->
+        <!-- Button mobile menu -->
 
         <button
           type="button"
@@ -90,7 +90,9 @@
             <li class="menu-item">
               <a href="./portfolio.html" class="menu-link link">Portfolio</a>
             </li>
-            <li class="menu-item"><a href="" class="menu-link active link">Contacts</a></li>
+            <li class="menu-item">
+              <a href="" class="menu-link active link">Contacts</a>
+            </li>
           </ul>
           <div>
             <address class="menu-address-wrap">
@@ -101,7 +103,9 @@
                   >
                 </li>
                 <li class="menu-item">
-                  <a href="mailto:info@devstudio.com" class="menu-address mail link"
+                  <a
+                    href="mailto:info@devstudio.com"
+                    class="menu-address mail link"
                     >info@devstudio.com</a
                   >
                 </li>
@@ -142,7 +146,6 @@
       </div>
     </header>
     <main>
-
       <!-- Hero -->
 
       <section class="hero-section section">
@@ -156,7 +159,7 @@
 
       <!-- Advantages -->
 
-       <section class="advantages">
+      <section class="advantages">
         <div class="container">
           <h2 class="visually-hidden">Our advantages</h2>
           <ul class="advantages-list list">
@@ -210,9 +213,9 @@
             </li>
           </ul>
         </div>
-        </section>
+      </section>
 
-        <!-- We are doing -->
+      <!-- We are doing -->
 
       <section class="doing">
         <div class="container">
@@ -229,16 +232,22 @@
             </li>
           </ul>
         </div>
-        </section>
+      </section>
 
-        <!-- Team -->
+      <!-- Team -->
 
-       <section class="section-team">
+      <section class="section-team">
         <div class="container">
           <h2 class="team-tittle">Our Team</h2>
           <ul class="team-list list">
             <li class="team-item">
-              <img src="./images/mark.jpg" alt="markguerrero" width="264" />
+              <img
+                class="team-img"
+                srcset="./images/mark.jpg 1x, ./images/mark@2.jpg 2x"
+                src="./images/mark.jpg"
+                alt="markguerrero"
+                width="264"
+              />
               <div class="team-card">
                 <h3 class="card-tittle">Mark Guerrero</h3>
                 <p class="team-job">Product Designer</p>
@@ -275,7 +284,13 @@
               </div>
             </li>
             <li class="team-item">
-              <img src="./images/tom.jpg" alt="tomford" width="264" />
+              <img
+                class="team-img"
+                srcset="./images/tom.jpg 1x, ./images/tom@2.jpg 2x"
+                src="./images/tom.jpg"
+                alt="tomford"
+                width="264"
+              />
               <div class="team-card">
                 <h3 class="card-tittle">Tom Ford</h3>
                 <p class="team-job">Frontend Developer</p>
@@ -312,7 +327,13 @@
               </div>
             </li>
             <li class="team-item">
-              <img src="./images/camila.jpg" alt="gamilagarcia" width="264" />
+              <img
+                class="team-img"
+                srcset="./images/camila.jpg 1x, ./images/camila@2.jpg 2x"
+                src="./images/camila.jpg"
+                alt="gamilagarcia"
+                width="264"
+              />
               <div class="team-card">
                 <h3 class="card-tittle">Camila Garcia</h3>
                 <p class="team-job">Marketing</p>
@@ -349,7 +370,13 @@
               </div>
             </li>
             <li class="team-item">
-              <img src="./images/daniel.jpg" alt="danielwilson" width="264" />
+              <img
+                class="team-img"
+                srcset="./images/daniel.jpg 1x, ./images/daniel@2.jpg 2x"
+                src="./images/daniel.jpg"
+                alt="danielwilson"
+                width="264"
+              />
               <div class="team-card">
                 <h3 class="card-tittle">Daniel Wilson</h3>
                 <p class="team-job">UI Designer</p>
@@ -388,7 +415,10 @@
           </ul>
         </div>
       </section>
-      <!-- <section class="section">
+
+      <!-- Customers -->
+
+      <section class="section-customers">
         <div class="container">
           <h2 class="tittle-customers">Customers</h2>
           <ul class="customers-list list">
@@ -438,50 +468,55 @@
         </div>
       </section>
     </main>
-    <footer class="footer">
-      <div class="container footer-container">
-        <div>
-          <a href="./index.html" class="logo-footer"
-            >WEB<span class="logo-web">STUDIO</span></a
-          >
-          <p class="footer-text">
-            Increase the flow of customers and sales for your business with
-            digital marketing & growth solutions.
-          </p>
-        </div>
 
-        <div class="footer-media">
-          <h2 class="footer-tittle">Social media</h2>
-          <ul class="list footer-list">
-            <li class="footer-item">
-              <a class="footer-link" href="#">
-                <svg class="footer-icon">
-                  <use href="./images/icons.svg#icon-instagram"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="footer-item">
-              <a class="footer-link" href="#">
-                <svg class="footer-icon">
-                  <use href="./images/icons.svg#icon-twitter"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="footer-item">
-              <a class="footer-link" href="#">
-                <svg class="footer-icon">
-                  <use href="./images/icons.svg#icon-facebook"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="footer-item">
-              <a class="footer-link" href="#">
-                <svg class="footer-icon">
-                  <use href="./images/icons.svg#icon-linkedin"></use>
-                </svg>
-              </a>
-            </li>
-          </ul>
+    <!-- Footer -->
+
+    <!-- <footer class="footer">
+      <div class="container footer-container">
+        <div class="footer-about">
+          <div class="container-logo">
+            <a href="./index.html" class="logo-footer"
+              >WEB<span class="logo-web">STUDIO</span></a
+            >
+            <p class="footer-text">
+              Increase the flow of customers and sales for your business with
+              digital marketing & growth solutions.
+            </p>
+          </div>
+
+          <div class="footer-media">
+            <h2 class="footer-tittle">Social media</h2>
+            <ul class="list footer-list">
+              <li class="footer-item">
+                <a class="footer-link" href="#">
+                  <svg class="footer-icon">
+                    <use href="./images/icons.svg#icon-instagram"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="footer-item">
+                <a class="footer-link" href="#">
+                  <svg class="footer-icon">
+                    <use href="./images/icons.svg#icon-twitter"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="footer-item">
+                <a class="footer-link" href="#">
+                  <svg class="footer-icon">
+                    <use href="./images/icons.svg#icon-facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="footer-item">
+                <a class="footer-link" href="#">
+                  <svg class="footer-icon">
+                    <use href="./images/icons.svg#icon-linkedin"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
         </div>
         <div class="subscribe-container">
           <p class="subscribe-tittle">Subscribe</p>
@@ -507,6 +542,8 @@
         </div>
       </div>
     </footer> -->
+
+    <!-- Modal window -->
 
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
