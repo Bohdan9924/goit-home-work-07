@@ -160,7 +160,7 @@ img {
 .nav-list .active-link::after {
    content: '';
    position: absolute;
-   bottom: 0;
+   bottom: -1px;
    left: 0;
    width: 100%;
    height: 4px;
@@ -541,13 +541,12 @@ img {
 /*Our advantages*/
 
 .advantages {
-   margin: 96px 0;
-   padding-bottom: 0;
+   padding: 96px 0;
 }
 
 @media screen and (min-width: 1200px) {
    .advantages {
-   margin: 120px 0;
+   padding-top: 120px;
    padding-bottom: 0;
    }
 }
